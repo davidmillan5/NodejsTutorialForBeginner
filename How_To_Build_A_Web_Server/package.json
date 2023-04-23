@@ -1,0 +1,29 @@
+{
+  "name": "how_to_build_a_web_server",
+  "version": "1.0.0",
+  "description": "How To Build a Web Server with NodeJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "keywords": [
+    "NodeJS",
+    "JavaScript",
+    "NPM",
+    "Libraries",
+    "Nodemon",
+    "UUID",
+    "Date-fns"
+  ],
+  "author": "Cesar David Millan",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "date-fns": "^2.29.3",
+    "uuid": "^9.0.0"
+  }
+}
