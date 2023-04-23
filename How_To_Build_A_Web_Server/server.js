@@ -9,10 +9,7 @@ const EventEmitter = require('events');
 class Emitter extends EventEmitter {}
 // Initialize object
 const myEmitter = new Emitter();
-
-// myEmitter.on('log', (message) => {
-//   logEvents(message);
-// });
+myEmitter.on('log', (msg, fileName) => logEvents(msg, fileName));
 
 const serveFile = async (filePath, contentType, response) => {
   try {
@@ -38,6 +35,7 @@ const serveFile = async (filePath, contentType, response) => {
 
 const server = http.createServer((req, res) => {
   console.log(req.url, req.method);
+  myEmitter.emit('log', `${req.url}\t${req.method}`, 'reqLog.txt');
 
   const extension = path.extname(req.url);
 
