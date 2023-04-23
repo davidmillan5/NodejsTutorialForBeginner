@@ -1,5 +1,5 @@
 {
-  "name": "What_Is_A_Middleware",
+  "name": "what_is_a_middleware",
   "version": "1.0.0",
   "description": "Intro to Middlewares",
   "main": "server.js",
@@ -17,6 +17,7 @@
   "author": "Cesar David Millan",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "date-fns": "^2.29.3",
     "express": "^4.18.2",
     "uuid": "^9.0.0"
